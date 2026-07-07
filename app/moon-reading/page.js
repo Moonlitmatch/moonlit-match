@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   CheckCircle2,
   Clock3,
@@ -139,30 +140,16 @@ export default function MoonReadingPage() {
               >
                 <div className="absolute -inset-5 rounded-full bg-[#f8dc8f]/14 blur-3xl transition duration-300 group-hover:bg-[#f8dc8f]/18" />
                 <div className="relative rounded-lg border border-white/14 bg-white/[0.08] p-5 shadow-[0_28px_90px_rgba(248,220,143,0.14)] backdrop-blur-xl transition duration-300 group-hover:scale-[1.01]">
-                  <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-[#f8dc8f]/18 bg-[radial-gradient(circle_at_50%_30%,rgba(248,220,143,0.26),transparent_30%),linear-gradient(145deg,#0b1024_0%,#12091f_55%,#070712_100%)]">
-                    <div
-                      className="absolute inset-0 opacity-30"
-                      style={{
-                        backgroundImage:
-                          "radial-gradient(circle, rgba(255,255,255,0.7) 1px, transparent 1.4px)",
-                        backgroundSize: "34px 34px",
-                      }}
+                  <div className="overflow-hidden rounded-lg border border-[#f8dc8f]/18 bg-[#0b1024]">
+                    <Image
+                      src="/images/moon-reading-hero.webp"
+                      alt="A glowing moon reading audio presentation with moon phases, a play button, and a reflective viewer"
+                      width={1120}
+                      height={1400}
+                      priority
+                      sizes="(min-width: 1024px) 40vw, 92vw"
+                      className="aspect-[4/5] h-auto w-full object-cover object-[52%_50%]"
                     />
-                    <div className="absolute left-1/2 top-[15%] h-44 w-44 -translate-x-1/2 rounded-full bg-[#f8dc8f]/20 blur-2xl" />
-                    <div className="absolute left-1/2 top-[18%] flex h-36 w-36 -translate-x-1/2 items-center justify-center rounded-full border border-[#f8dc8f]/34 bg-white/[0.06] text-[#f8dc8f] shadow-[0_0_70px_rgba(248,220,143,0.22)]">
-                      <Moon size={80} aria-hidden="true" />
-                    </div>
-                    <Sparkles
-                      className="absolute right-[18%] top-[18%] text-[#f8dc8f]"
-                      size={26}
-                      aria-hidden="true"
-                    />
-                    <Waves
-                      className="absolute bottom-[24%] left-[18%] text-[#a99cff]"
-                      size={30}
-                      aria-hidden="true"
-                    />
-                    <div className="absolute bottom-[16%] left-1/2 h-px w-48 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#f8dc8f]/55 to-transparent" />
                   </div>
                 </div>
               </a>
