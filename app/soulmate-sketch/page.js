@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   CheckCircle2,
   Eye,
@@ -132,33 +133,16 @@ export default function SoulmateSketchPage() {
               <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
                 <div className="absolute -inset-5 rounded-full bg-[#f5a8c7]/18 blur-3xl" />
                 <div className="relative rounded-lg border border-white/14 bg-white/[0.08] p-5 shadow-[0_28px_90px_rgba(245,168,199,0.18)] backdrop-blur-xl">
-                  <div className="rounded-lg border border-[#f5a8c7]/18 bg-[#0b0718]/72 p-6">
-                    <div className="flex items-center justify-between text-[#f5a8c7]">
-                      <PenLine size={24} aria-hidden="true" />
-                      <Heart size={22} aria-hidden="true" />
-                    </div>
-                    <div className="relative mx-auto mt-8 h-64 max-w-56">
-                      <div className="absolute left-1/2 top-2 h-32 w-24 -translate-x-1/2 rounded-[48%_52%_44%_56%] border border-[#f5a8c7]/60" />
-                      <div className="absolute left-1/2 top-9 h-16 w-28 -translate-x-1/2 rounded-t-full border-t border-[#f8dc8f]/45" />
-                      <div className="absolute left-1/2 top-36 h-20 w-40 -translate-x-1/2 rounded-t-[70%] border-t border-[#f5a8c7]/45" />
-                      <div className="absolute left-[34%] top-24 h-px w-12 -rotate-12 bg-[#f8dc8f]/55" />
-                      <div className="absolute right-[30%] top-[6.25rem] h-px w-10 rotate-12 bg-[#f8dc8f]/45" />
-                      <div className="absolute bottom-4 left-1/2 h-px w-44 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#f5a8c7]/45 to-transparent" />
-                      <Stars
-                        className="absolute right-2 top-0 text-[#f8dc8f]"
-                        size={22}
-                        aria-hidden="true"
-                      />
-                    </div>
-                    <div className="mt-2 rounded-lg border border-white/10 bg-white/[0.06] p-4">
-                      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f8dc8f]">
-                        Symbolic sketch
-                      </p>
-                      <p className="mt-2 text-sm leading-6 text-white/62">
-                        A romantic visual prompt for attraction themes,
-                        connection patterns, and self-reflection.
-                      </p>
-                    </div>
+                  <div className="overflow-hidden rounded-lg border border-[#f5a8c7]/18 bg-[#0b0718]/72">
+                    <Image
+                      src="/images/soulmate-sketch-hero.webp"
+                      alt="A psychic sketch artist presenting a hand-drawn soulmate portrait in a candlelit moonlit studio"
+                      width={1120}
+                      height={1400}
+                      priority
+                      sizes="(min-width: 1024px) 40vw, 92vw"
+                      className="aspect-[4/5] h-auto w-full object-cover object-[50%_50%]"
+                    />
                   </div>
                 </div>
               </div>
