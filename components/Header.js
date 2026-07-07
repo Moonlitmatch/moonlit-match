@@ -6,7 +6,7 @@ const navLinks = [
   { href: "/soulmate-sketch/", label: "Soulmate Sketch" },
 ];
 
-export default function Header() {
+export default function Header({ minimal = false }) {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#070712]/82 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4 sm:px-8 lg:px-10">
@@ -19,17 +19,22 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav aria-label="Primary navigation" className="hidden items-center gap-6 sm:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm text-white/70 transition hover:text-[#f8dc8f]"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        {!minimal && (
+          <nav
+            aria-label="Primary navigation"
+            className="hidden items-center gap-6 sm:flex"
+          >
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm text-white/70 transition hover:text-[#f8dc8f]"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        )}
       </div>
     </header>
   );

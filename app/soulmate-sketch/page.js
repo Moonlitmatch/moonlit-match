@@ -16,7 +16,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import SectionShell from "@/components/SectionShell";
-import { OFFERS } from "@/lib/offers";
+import { AFFILIATE_REL, OFFERS } from "@/lib/offers";
 
 export const metadata = {
   title: "Soulmate Sketch | Explore a Symbolic Romantic Connection",
@@ -95,7 +95,7 @@ const faqs = [
 export default function SoulmateSketchPage() {
   return (
     <>
-      <Header />
+      <Header minimal />
       <main className="relative flex-1 overflow-hidden bg-[#05050d] text-white">
         <section className="relative flex min-h-[86svh] items-center overflow-hidden px-6 py-16 sm:px-8 lg:px-10">
           <CelestialBackdrop tone="sketch" />
@@ -130,7 +130,15 @@ export default function SoulmateSketchPage() {
                 </div>
               </div>
 
-              <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
+              <a
+                href={OFFERS.soulmateSketch.affiliateUrl}
+                target="_blank"
+                rel={AFFILIATE_REL}
+                aria-label="Discover your Soulmate Sketch"
+                data-offer={OFFERS.soulmateSketch.dataOffer}
+                data-cta-location="hero-image"
+                className="group relative mx-auto block w-full max-w-sm cursor-pointer rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f5a8c7]/70 focus:ring-offset-2 focus:ring-offset-[#05050d] lg:max-w-md"
+              >
                 <div className="absolute -inset-5 rounded-full bg-[#f5a8c7]/18 blur-3xl" />
                 <div className="relative rounded-lg border border-white/14 bg-white/[0.08] p-5 shadow-[0_28px_90px_rgba(245,168,199,0.18)] backdrop-blur-xl">
                   <div className="overflow-hidden rounded-lg border border-[#f5a8c7]/18 bg-[#0b0718]/72">
@@ -145,7 +153,7 @@ export default function SoulmateSketchPage() {
                     />
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>

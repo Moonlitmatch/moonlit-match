@@ -14,7 +14,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import SectionShell from "@/components/SectionShell";
-import { OFFERS } from "@/lib/offers";
+import { AFFILIATE_REL, OFFERS } from "@/lib/offers";
 
 export const metadata = {
   title: "Free Moon Reading | Discover What Your Birth Moon May Reveal",
@@ -93,38 +93,79 @@ const faqs = [
 export default function MoonReadingPage() {
   return (
     <>
-      <Header />
+      <Header minimal />
       <main className="relative flex-1 overflow-hidden bg-[#05050d] text-white">
         <section className="relative flex min-h-[86svh] items-center overflow-hidden px-6 py-16 sm:px-8 lg:px-10">
           <CelestialBackdrop tone="moon" />
           <div className="relative z-10 mx-auto w-full max-w-6xl">
-            <div className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f8dc8f]">
-                FREE PERSONALIZED MOON READING
-              </p>
-              <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-                Your Free Moon Reading May Reveal the Emotional Pattern Beneath
-                Your Story
-              </h1>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
-                Explore a personalized Moon Reading experience designed to help
-                you reflect on your moon sign, moon phase, intuition,
-                relationships, and inner world.
-              </p>
-              <div className="mt-8">
-                <CTAButton
-                  href={OFFERS.moonReading.affiliateUrl}
-                  offer={OFFERS.moonReading.dataOffer}
-                  location="hero"
-                  external
-                >
-                  Start Your Free Moon Reading
-                </CTAButton>
-                <p className="mt-4 max-w-md text-sm leading-6 text-white/58">
-                  A moon-based experience for spiritual curiosity, clarity, and
-                  self-reflection.
+            <div className="grid items-center gap-10 lg:grid-cols-[1.04fr_0.96fr]">
+              <div className="max-w-3xl">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f8dc8f]">
+                  FREE PERSONALIZED MOON READING
                 </p>
+                <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+                  Your Free Moon Reading May Reveal the Emotional Pattern
+                  Beneath Your Story
+                </h1>
+                <p className="mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
+                  Explore a personalized Moon Reading experience designed to
+                  help you reflect on your moon sign, moon phase, intuition,
+                  relationships, and inner world.
+                </p>
+                <div className="mt-8">
+                  <CTAButton
+                    href={OFFERS.moonReading.affiliateUrl}
+                    offer={OFFERS.moonReading.dataOffer}
+                    location="hero"
+                    external
+                  >
+                    Start Your Free Moon Reading
+                  </CTAButton>
+                  <p className="mt-4 max-w-md text-sm leading-6 text-white/58">
+                    A moon-based experience for spiritual curiosity, clarity,
+                    and self-reflection.
+                  </p>
+                </div>
               </div>
+
+              <a
+                href={OFFERS.moonReading.affiliateUrl}
+                target="_blank"
+                rel={AFFILIATE_REL}
+                aria-label="Start your free Moon Reading"
+                data-offer={OFFERS.moonReading.dataOffer}
+                data-cta-location="hero-image"
+                className="group relative mx-auto block w-full max-w-sm cursor-pointer rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f8dc8f]/70 focus:ring-offset-2 focus:ring-offset-[#05050d] lg:max-w-md"
+              >
+                <div className="absolute -inset-5 rounded-full bg-[#f8dc8f]/14 blur-3xl transition duration-300 group-hover:bg-[#f8dc8f]/18" />
+                <div className="relative rounded-lg border border-white/14 bg-white/[0.08] p-5 shadow-[0_28px_90px_rgba(248,220,143,0.14)] backdrop-blur-xl transition duration-300 group-hover:scale-[1.01]">
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-[#f8dc8f]/18 bg-[radial-gradient(circle_at_50%_30%,rgba(248,220,143,0.26),transparent_30%),linear-gradient(145deg,#0b1024_0%,#12091f_55%,#070712_100%)]">
+                    <div
+                      className="absolute inset-0 opacity-30"
+                      style={{
+                        backgroundImage:
+                          "radial-gradient(circle, rgba(255,255,255,0.7) 1px, transparent 1.4px)",
+                        backgroundSize: "34px 34px",
+                      }}
+                    />
+                    <div className="absolute left-1/2 top-[15%] h-44 w-44 -translate-x-1/2 rounded-full bg-[#f8dc8f]/20 blur-2xl" />
+                    <div className="absolute left-1/2 top-[18%] flex h-36 w-36 -translate-x-1/2 items-center justify-center rounded-full border border-[#f8dc8f]/34 bg-white/[0.06] text-[#f8dc8f] shadow-[0_0_70px_rgba(248,220,143,0.22)]">
+                      <Moon size={80} aria-hidden="true" />
+                    </div>
+                    <Sparkles
+                      className="absolute right-[18%] top-[18%] text-[#f8dc8f]"
+                      size={26}
+                      aria-hidden="true"
+                    />
+                    <Waves
+                      className="absolute bottom-[24%] left-[18%] text-[#a99cff]"
+                      size={30}
+                      aria-hidden="true"
+                    />
+                    <div className="absolute bottom-[16%] left-1/2 h-px w-48 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#f8dc8f]/55 to-transparent" />
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </section>
