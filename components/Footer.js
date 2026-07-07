@@ -42,7 +42,7 @@ export default function Footer() {
           </nav>
         </div>
 
-        <p className="mt-8 border-t border-white/10 pt-6 text-sm leading-6 text-white/55">
+        <p className="mt-8 border-t border-white/10 pt-6 text-sm leading-7 text-white/68 sm:text-[0.95rem]">
           {affiliateDisclosure}
         </p>
       </div>

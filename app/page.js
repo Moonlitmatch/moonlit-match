@@ -94,7 +94,7 @@ export default function Home() {
                   offer={OFFERS.moonReading.dataOffer}
                   location="hero"
                 >
-                  Explore Moon Reading
+                  Start Your Free Moon Reading
                 </CTAButton>
                 <CTAButton
                   href={OFFERS.soulmateSketch.bridgeHref}
@@ -218,7 +218,7 @@ export default function Home() {
               title="Free Personalized Moon Reading"
               copy="Explore a free moon-based experience that may reflect your emotional energy, moon phase, intuition, and relationship patterns."
               href={OFFERS.moonReading.bridgeHref}
-              ctaLabel="Explore Moon Reading"
+              ctaLabel="Get My Free Moon Reading"
               offer={OFFERS.moonReading.dataOffer}
               tone="moon"
               points={[
@@ -296,7 +296,7 @@ export default function Home() {
                 offer={OFFERS.moonReading.dataOffer}
                 location="final"
               >
-                Explore Moon Reading
+                Start Your Free Moon Reading
               </CTAButton>
               <CTAButton
                 href={OFFERS.soulmateSketch.bridgeHref}

@@ -70,9 +70,9 @@ const steps = [
 
 const faqs = [
   {
-    question: "Does this guarantee I will meet someone?",
+    question: "Does this mean I will meet someone?",
     answer:
-      "No. Moonlit Match does not frame soulmate sketch experiences as guarantees, proof, or certain predictions.",
+      "No. Moonlit Match does not frame soulmate sketch experiences as promises, proof, or certain predictions.",
   },
   {
     question: "Is the sketch meant to be literal?",
@@ -99,32 +99,68 @@ export default function SoulmateSketchPage() {
         <section className="relative flex min-h-[86svh] items-center overflow-hidden px-6 py-16 sm:px-8 lg:px-10">
           <CelestialBackdrop tone="sketch" />
           <div className="relative z-10 mx-auto w-full max-w-6xl">
-            <div className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f5a8c7]">
-                SOULMATE SYMBOLISM <span aria-hidden="true">&bull;</span>{" "}
-                ROMANTIC CURIOSITY
-              </p>
-              <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-                A Symbolic Sketch May Help You Reflect on the Love You&apos;re
-                Calling In
-              </h1>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
-                Explore a soulmate sketch experience designed around romantic
-                curiosity, connection patterns, and the quiet feeling that
-                someone meaningful may be closer than you think.
-              </p>
-              <div className="mt-8">
-                <CTAButton
-                  href={OFFERS.soulmateSketch.affiliateUrl}
-                  offer={OFFERS.soulmateSketch.dataOffer}
-                  location="hero"
-                  external
-                >
-                  Discover Your Soulmate Sketch
-                </CTAButton>
-                <p className="mt-4 max-w-md text-sm leading-6 text-white/58">
-                  For symbolic insight and self-reflection.
+            <div className="grid items-center gap-10 lg:grid-cols-[1.04fr_0.96fr]">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f5a8c7]">
+                  SOULMATE SYMBOLISM <span aria-hidden="true">&bull;</span>{" "}
+                  ROMANTIC CURIOSITY
                 </p>
+                <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+                  A Symbolic Sketch May Help You Reflect on the Love You&apos;re
+                  Calling In
+                </h1>
+                <p className="mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
+                  Explore a soulmate sketch experience designed around romantic
+                  curiosity, connection patterns, and the quiet feeling that
+                  someone meaningful may be closer than you think.
+                </p>
+                <div className="mt-8">
+                  <CTAButton
+                    href={OFFERS.soulmateSketch.affiliateUrl}
+                    offer={OFFERS.soulmateSketch.dataOffer}
+                    location="hero"
+                    external
+                  >
+                    Discover Your Soulmate Sketch
+                  </CTAButton>
+                  <p className="mt-4 max-w-md text-sm leading-6 text-white/58">
+                    For symbolic insight and self-reflection.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
+                <div className="absolute -inset-5 rounded-full bg-[#f5a8c7]/18 blur-3xl" />
+                <div className="relative rounded-lg border border-white/14 bg-white/[0.08] p-5 shadow-[0_28px_90px_rgba(245,168,199,0.18)] backdrop-blur-xl">
+                  <div className="rounded-lg border border-[#f5a8c7]/18 bg-[#0b0718]/72 p-6">
+                    <div className="flex items-center justify-between text-[#f5a8c7]">
+                      <PenLine size={24} aria-hidden="true" />
+                      <Heart size={22} aria-hidden="true" />
+                    </div>
+                    <div className="relative mx-auto mt-8 h-64 max-w-56">
+                      <div className="absolute left-1/2 top-2 h-32 w-24 -translate-x-1/2 rounded-[48%_52%_44%_56%] border border-[#f5a8c7]/60" />
+                      <div className="absolute left-1/2 top-9 h-16 w-28 -translate-x-1/2 rounded-t-full border-t border-[#f8dc8f]/45" />
+                      <div className="absolute left-1/2 top-36 h-20 w-40 -translate-x-1/2 rounded-t-[70%] border-t border-[#f5a8c7]/45" />
+                      <div className="absolute left-[34%] top-24 h-px w-12 -rotate-12 bg-[#f8dc8f]/55" />
+                      <div className="absolute right-[30%] top-[6.25rem] h-px w-10 rotate-12 bg-[#f8dc8f]/45" />
+                      <div className="absolute bottom-4 left-1/2 h-px w-44 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#f5a8c7]/45 to-transparent" />
+                      <Stars
+                        className="absolute right-2 top-0 text-[#f8dc8f]"
+                        size={22}
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div className="mt-2 rounded-lg border border-white/10 bg-white/[0.06] p-4">
+                      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f8dc8f]">
+                        Symbolic sketch
+                      </p>
+                      <p className="mt-2 text-sm leading-6 text-white/62">
+                        A romantic visual prompt for attraction themes,
+                        connection patterns, and self-reflection.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

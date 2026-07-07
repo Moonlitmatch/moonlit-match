@@ -32,7 +32,7 @@ export default function DisclaimerPage() {
               sketch content should not be treated as certain predictions.
             </p>
             <p>
-              We do not guarantee romantic outcomes, personal results, or the
+              We do not promise romantic outcomes, personal results, or the
               accuracy of third-party readings or sketches. Use your own
               judgment before relying on any interpretation.
             </p>
