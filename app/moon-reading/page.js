@@ -70,24 +70,34 @@ const steps = [
 
 const faqs = [
   {
-    question: "Is the Moon Reading free?",
+    question: "Is the Moon Reading really free?",
     answer:
-      "The front-end Moon Reading experience is presented as free. Review the partner page details before submitting information or continuing.",
+      "Yes. The initial Moon Reading experience is presented as free by the partner. You'll be guided through a short process using your birth details so the reading can be personalized around your moon sign, moon phase, and lunar themes.",
   },
   {
-    question: "Is this a prediction?",
+    question: "What happens after I click?",
     answer:
-      "No. Moonlit Match frames moon readings as symbolic insight and self-reflection, not certain predictions or promised outcomes.",
+      "You'll continue to the Moon Reading experience, where you may be asked for details like your birth date, birth place, birth time, and email so your personalized reading can be generated. The experience is designed to feel more like a guided moon-based presentation than a generic horoscope.",
   },
   {
-    question: "What can a moon reading help me explore?",
+    question: "Why does my birth information matter?",
     answer:
-      "It may help you explore emotional energy, intuition, moon sign themes, relationship patterns, and the parts of your inner world that want more clarity.",
+      "In astrology, your moon sign and moon phase are connected to the timing and place of your birth. Those details help shape the symbolic reading around emotional patterns, intuition, relationships, and inner-world themes.",
   },
   {
-    question: "Can this replace personal judgment or advice?",
+    question: "What should I listen for in the reading?",
     answer:
-      "No. Treat the experience as spiritual curiosity and reflection. Keep using your own judgment for relationships, health, finances, and major life decisions.",
+      "Listen for the parts that feel personally meaningful: emotional patterns, repeating relationship themes, moments of clarity, or language that helps you understand what you've been feeling. Treat it as a reflective experience, not a fixed prediction.",
+  },
+  {
+    question: "Is this a prediction of my future?",
+    answer:
+      "No. Moonlit Match frames moon readings as symbolic insight and self-reflection, not certain predictions or promised outcomes. Use what resonates as a prompt for clarity, intuition, and personal meaning.",
+  },
+  {
+    question: "What if I do not know my exact birth time?",
+    answer:
+      "Use the guidance provided on the partner page. Exact birth time can help refine certain astrology details when available, but the experience will guide you through the information it needs to begin.",
   },
 ];
 

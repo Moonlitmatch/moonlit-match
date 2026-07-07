@@ -71,24 +71,34 @@ const steps = [
 
 const faqs = [
   {
+    question: "What happens after I click?",
+    answer:
+      "You'll continue to the partner experience where you can begin the soulmate sketch process. The experience is designed around romantic curiosity, symbolic reflection, and the kind of connection themes that may already feel meaningful to you.",
+  },
+  {
+    question: "Is the sketch meant to be taken literally?",
+    answer:
+      "Treat it as a symbolic insight and romantic reflection tool. Some people use the sketch to notice attraction patterns, personality qualities, or emotional themes they feel drawn toward, rather than to define one specific person or outcome.",
+  },
+  {
     question: "Does this mean I will meet someone?",
     answer:
-      "No. Moonlit Match does not frame soulmate sketch experiences as promises, proof, or certain predictions.",
+      "No. Moonlit Match does not present soulmate sketch experiences as proof, certainty, or a promised romantic outcome. The value is in exploring what the image and experience bring up for you emotionally.",
   },
   {
-    question: "Is the sketch meant to be literal?",
+    question: "What if I'm skeptical?",
     answer:
-      "Treat it as symbolic insight and romantic curiosity. It can be meaningful without needing to define a specific person or outcome.",
+      "That's completely okay. The best way to approach this is with curiosity, self-reflection, and your own judgment. You do not have to force belief for the experience to give you something interesting to reflect on.",
   },
   {
-    question: "What can this experience help me explore?",
+    question: "Who is this experience for?",
     answer:
-      "It may help you reflect on attraction, connection patterns, emotional energy, and the kind of love symbolism that feels alive to you.",
+      "It may be a good fit if you're curious about love, attraction, timing, recurring romantic patterns, or the kind of connection you keep imagining. It's designed for people who enjoy symbolic experiences and emotional self-discovery.",
   },
   {
-    question: "What if I am skeptical?",
+    question: "How should I use the sketch?",
     answer:
-      "That is completely okay. The healthiest way to approach this is with curiosity, self-reflection, and your own judgment.",
+      "Use it as a reflection point. Notice what feels familiar, surprising, comforting, or unexpected. The sketch can help you think more clearly about the qualities, energy, and connection themes that matter to you in love.",
   },
 ];
 

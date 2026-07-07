@@ -265,7 +265,7 @@ export default function Home() {
                   {card.copy}
                 </p>
                 <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#f8dc8f]">
-                  Read the path
+                  Explore this insight
                   <ArrowRight
                     size={16}
                     className="transition group-hover:translate-x-1"
