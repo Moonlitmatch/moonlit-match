@@ -39,6 +39,11 @@ export default function PrivacyPolicyPage() {
               process information according to their own privacy policies.
             </p>
             <p>
+              Moonlit Match may use Pinterest Tag or similar tracking
+              technologies to measure visits, page activity, and outbound
+              affiliate clicks.
+            </p>
+            <p>
               We do not sell personal readings directly on this site. If you
               continue to a third-party offer, review that platform&apos;s
               privacy practices before purchasing or submitting information.
