@@ -44,6 +44,14 @@ export default function PrivacyPolicyPage() {
               affiliate clicks.
             </p>
             <p>
+              Moonlit Match may use Google Analytics, including analytics
+              cookies or similar tracking technologies, to understand aggregate
+              page visits, traffic sources, bridge page performance, and
+              outbound affiliate clicks. Analytics events may include non-personal
+              details such as a Pinterest pin code, offer page, page path,
+              destination domain, and call-to-action text.
+            </p>
+            <p>
               We do not sell personal readings directly on this site. If you
               continue to a third-party offer, review that platform&apos;s
               privacy practices before purchasing or submitting information.
